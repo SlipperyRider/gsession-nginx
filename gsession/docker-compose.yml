@@ -9,7 +9,7 @@ services:
       - TZ=Asia/Tokyo
 
     volumes:
-      - gsession-dat:/opt/data
+      - gsession-data:/opt/data
 
     networks:
       - containya-network
@@ -18,7 +18,7 @@ services:
 #      - 8081:8080
 
 volumes:
-  gsession-dat:
+  gsession-data:
     external: true
 
 networks:
