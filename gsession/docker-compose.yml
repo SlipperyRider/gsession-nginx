@@ -2,8 +2,8 @@ version: '3'
 
 services:
   gsession:
-    image: localhost/gsession
-    container_name: 'gsession'
+    image: localhost/gsession:latest
+    container_name: gsession
 
     environment:
       - TZ=Asia/Tokyo
