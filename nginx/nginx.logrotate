@@ -1,0 +1,14 @@
+/srv/mm-arm64/nginx/logs/*.log
+{
+    missingok
+    notifempty
+    daily
+    rotate 10
+    compress
+    delaycompress
+    sharedscripts
+    postrotate
+        /usr/local/bin/docker-compose -f /svr/mm-arm64/nginx/docker-compose.yml kill -s HUP nginx
+    endscript
+}
+
