@@ -1,7 +1,7 @@
 version: "3"
 services:
   nginx:
-    image: localhost/nginx-nya:latest
+    image: nginx:latest
     container_name: nginx-containya
     restart: always
 
