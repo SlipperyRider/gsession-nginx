@@ -11,6 +11,7 @@ services:
 
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./err.conf:/etc/nginx/err.conf:ro
       - ./conf.d:/etc/nginx/conf.d:ro
       - ./html:/var/www/html:ro
       - nginx-certific8s:/etc/ssl/certs:ro
