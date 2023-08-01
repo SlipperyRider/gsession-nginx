@@ -3,7 +3,7 @@ version: '3'
 services:
   gsession:
     image: localhost/gsession:latest
-    container_name: gsession
+    container_name: gsession-containya
 
     environment:
       - TZ=Asia/Tokyo
